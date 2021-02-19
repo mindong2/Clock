@@ -25,7 +25,7 @@ function deleteToDo(event){//밑에서 작성한 event
     saveToDos();
 }
 
-function saveToDos(){
+function saveToDos(){ //localStorage에 저장하는역할.
     localStorage.setItem(TODOS_LS, JSON.stringify(toDos));
     /*toDos로 저장하려면 localStorage내의 
     Value값은 String만 되기 때문에 
@@ -33,17 +33,25 @@ function saveToDos(){
 }
 function paintToDo(text){
     const li = document.createElement("li"); 
+    li.style.fontSize = `32px`;
     //HTML에서 얻는게 아니고 생성.
+    li.style.color = `#fff`
+    li.style.marginTop = `10px`
     const delBtn = document.createElement("button");
+    delBtn.style.margin = `0 0 0 15px`
+    delBtn.style.fontSize = `20px`;
+    delBtn.style.background = `none`;
+    delBtn.style.border = `none`
+    delBtn.style.cursor = `pointer`
     const span = document.createElement("span");
     const newId = toDos.length + 1;
-    delBtn.innerText= "❌";
     delBtn.addEventListener('click', deleteToDo);
     span.innerText = text //submit function에서 온 값.
-    li.appendChild(delBtn);
+    delBtn.innerText= "✌";
     li.appendChild(span); 
+    li.appendChild(delBtn);
     //무언가를 그것의 부모요소의 자식목록 끝에 노드를 추가//
-    li.id = newId;
+    li.id = newId; //li에 id가 없으므로 추가.
     toDoList.appendChild(li);
     const toDoObj = {
         text: text,

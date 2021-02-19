@@ -7,24 +7,25 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="js-clock">
-      <h1 class="js-title">00:00</h1>
-    </div>
+    <main class="Maintitle">
+      <div class="js-clock">
+        <h1 class="js-title">00:00</h1>
+      </div>
 
-    <form class="js-form form">
-      <!--submit이 가능하게 하려고 form으로 만듬.-->
-      <input type="text" placeholder="What is your name?" />
-    </form>
-    <h4 class="js-greetings greetings"></h4>
+      <form class="js-form form">
+        <!--submit이 가능하게 하려고 form으로 만듬.-->
+        <input type="text" placeholder="What is your name?" />
+      </form>
+      <h4 class="js-greetings greetings"></h4>
+      <form class="js-toDoForm">
+        <input type="text" placeholder="Write a to do" />
+      </form>
 
-    <form class="js-toDoForm">
-      <input type="text" placeholder="Write a to do" />
-    </form>
-
-    <ul class="js-toDoList"></ul>
-
+      <ol class="js-toDoList"></ol>
+    </main>
     <script src="clock.js"></script>
     <script src="greeting.js"></script>
     <script src="todo.js"></script>
+    <script src="bg.js"></script>
   </body>
 </html>

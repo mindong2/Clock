@@ -29,6 +29,8 @@ function paintGreeting(text){
     form.classList.remove(SHOWING_CN);
     greeting.classList.add(SHOWING_CN);
     greeting.innerText = `Hello ${text}!`;
+    greeting.style.color = `#fff`;
+    greeting.style.fontSize = `32px`;
 }
 
 function loadName(){
