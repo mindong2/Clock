@@ -19,9 +19,7 @@ body {
   margin-top: 10px;
 }
 
-.form {
-  display: none;
-}
+.form,
 .greetings {
   display: none;
 }
@@ -50,7 +48,7 @@ body {
 
 input {
   border: none;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  border-bottom: 1px solid #fff;
   border-radius: 10px 10px 0 0;
   margin-top: 10px;
   padding: 10px;
@@ -63,4 +61,11 @@ input::placeholder {
   color: #fff;
   font-size: 17px;
   text-align: center;
+}
+
+.js-weather {
+  position: absolute;
+  z-index: -1;
+  top: 0px;
+  right: 30px;
 }
