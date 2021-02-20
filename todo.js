@@ -39,7 +39,7 @@ function paintToDo(text){
     li.style.marginTop = `10px`
     const delBtn = document.createElement("button");
     delBtn.style.margin = `0 0 0 15px`
-    delBtn.style.fontSize = `23px`;
+    delBtn.style.fontSize = `28px`;
     delBtn.style.background = `none`;
     delBtn.style.border = `none`
     delBtn.style.cursor = `pointer`
